@@ -9,7 +9,7 @@ Student ID: 28306
 
 ---
 
-## Oracle Environment
+## Oracle Environment used;
 
 - Oracle Database 21c
 - Operating System: Windows
@@ -19,31 +19,34 @@ Student ID: 28306
 
 ## PDB Creation
 
-![ER](SCREENSHOT_ASS2/dropped_pbd_2.png)
+- Created Pluggable Database: `te_pdb_28306`
 
-- Created Pluggable Database: `ma_pdb_28306`
-- Created User inside PDB: `mariza_plsqlauca_28306`
+![ER](SCRNSHT/pbd%20user%20created.png)
+
+- Created User inside PDB: `teddy_plsqlauca_28306`
+
+![ER](SCRNSHT/showing%20con_name.png)
+![ER](SCRNSHT/showing%20pdb.png)
+
 - User granted CONNECT and RESOURCE privileges
 
-``
-![pdb user created]screenshot ass2
-
 ---
 
-## Task 2 – Temporary PDB
+## Temporary PDB
 
-- Temporary PDB created: `ma_to_delete_pdb_28306`
+- Temporary PDB created: `te_to_delete_pdb_28306`
+  ![ER](SCRNSHT/temporary%20pdb.png)
 - Verified existence
+  ![ER](SCRNSHT/deleted%20pdb%20dropped.png)
 - Deleted completely including datafiles
 - Confirmed removal
-
-Evidence provided in screenshots folder.
+  ![ER](SCRNSHT/dropped_pbd_2.png)
 
 ---
 
-## Task 3 – Oracle Enterprise Manager / Environment Verification
+## Oracle Enterprise Manager / Environment Verification
 
-Oracle Enterprise Manager Express could not be accessed due to local listener and HTTPS connection issues.
+Oracle Enterprise Manager Express couldn't be accessed due to local listener and HTTPS connection issues.
 
 Oracle SQL Developer was used as an alternative administrative interface to verify:
 
@@ -51,7 +54,7 @@ Oracle SQL Developer was used as an alternative administrative interface to veri
 - Created PDB
 - Created user
 
-Screenshot provided.
+![ER](SCRNSHT/dashboard.png)
 
 ---
 
@@ -60,17 +63,28 @@ Screenshot provided.
 Oracle Listener service failed to remain active which prevented access to Oracle Enterprise Manager Express.  
 This was resolved by using Oracle SQL Developer as an alternative tool to verify PDBs and users.
 
+## FINAL CHECKLIST
+
+- [✔️] Correct PDB names used
+- [✔️] User created inside the PDB
+- [✔️] Temporary PDB created and deleted
+- [✔️] OEM dashboard screenshot included
+- [✔️] GitHub repository is PUBLIC
+- [✔️] README is clear and professional
+- [✔️] Deadline respected
+
 ---
 
-## Submission Information
+## References
 
-Repository Link: (Paste your GitHub link here)  
-PDB Name Created: ma_pdb_28306  
-Issues Encountered: Yes
+- Oracle Corporation. Oracle Database Documentation (21c).  
+  https://docs.oracle.com/en/database/oracle/oracle-database/21/
 
----
+- Oracle Corporation. Multitenant Architecture (Pluggable Databases).  
+  https://docs.oracle.com/en/database/oracle/oracle-database/21/multi/
 
-## Integrity Statement
+- Oracle Corporation. SQL\*Plus Command-Line Tool.  
+  https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/
 
-All sources were properly cited. Implementations and analysis represent original work.  
-No AI-generated content was copied without attribution or adaptation.
+- GitHub Docs – Getting Started with Repositories.  
+  https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
